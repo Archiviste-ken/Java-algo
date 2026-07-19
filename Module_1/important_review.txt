@@ -1,0 +1,3 @@
+The class name and the file name should be same for the javac to compile the code
+
+If your class is declared as public, then the file name must exactly match the class name (including capitalization)
