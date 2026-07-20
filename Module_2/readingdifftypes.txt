@@ -1,0 +1,89 @@
+📌 Reading Different Data Types
+
+Integer
+int age = sc.nextInt();
+
+Double
+double salary = sc.nextDouble();
+
+String (One Word)
+String name = sc.next();
+
+Input
+
+John
+
+Works perfectly.
+
+String (Whole Sentence)
+String name = sc.nextLine();
+
+Input
+
+John Doe
+
+Output
+
+John Doe
+⚠️ Famous Interview Trap
+
+Look carefully.
+
+int age = sc.nextInt();
+
+String name = sc.nextLine();
+
+Input
+
+21
+Shreyesh
+
+Output
+
+(empty string)
+Why?
+
+nextInt() leaves the Enter key (\n) in the input buffer.
+
+nextLine() immediately reads that leftover newline.
+
+Correct way
+int age = sc.nextInt();
+sc.nextLine();
+
+String name = sc.nextLine();
+
+Remember this.
+
+Almost every Java beginner gets stuck here.
+
+🎯 Type Casting
+
+Sometimes Java won't convert types automatically.
+
+Example:
+
+int a = 10;
+double b = a;
+
+System.out.println(b);
+
+Output
+
+10.0
+
+Automatic conversion.
+
+Reverse?
+
+double x = 9.8;
+
+int y = (int) x;
+
+System.out.println(y);
+
+Output
+
+9
+
+Decimal part disappears.

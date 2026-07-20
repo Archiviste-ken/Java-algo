@@ -1,4 +1,6 @@
-class boss_challenge{
+
+class boss_challenge {
+
     public static void main(String[] args) {
         int price = 499;
         int quantity = 3;
